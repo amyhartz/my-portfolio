@@ -9,6 +9,10 @@ div.jumbotron {
   color: white;
   height: 450px;
   text-shadow: black 0.1em 0.1em 0.1em;
+
+  @media screen and (max-width: 600px) {
+    height: 120px;
+  }
 }
 
 .container-fluid {
@@ -16,6 +20,7 @@ div.jumbotron {
 }
 
 .tech {
+  margin-bottom: 10px;
   max-height: 80px;
   max-width: 100px;
 }
@@ -34,4 +39,8 @@ a {
 
 .bg-grey {
   background-color: $grey;
+}
+
+.center {
+  text-align: center;
 }

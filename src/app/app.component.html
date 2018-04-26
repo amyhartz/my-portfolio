@@ -9,7 +9,7 @@
       <div class="row justify-content-center">
         <div class="col col-md-8 text-center">
           <h1>Who Am I?</h1>
-          <img width="100px" src="../assets/images/bitmoji.png">
+          <img width="100px" alt="me" src="../assets/images/bitmoji.png">
           <p class="text-h3">Hi and welcome to my site! My name is Amy and I am a software engineer. I focus primarily on web development but
             have also worked on mobile apps. I am passionate about learning new technologies, encouraging women and girls to fall in love with tech,
             and traveling the world. <i class="fa fa-plane"></i></p>
@@ -20,9 +20,15 @@
     <div class="row text-center top">
       <div class="col">
         <h1>
-          <a href="https://twitter.com/amy_hartz" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
-          <a href="https://www.linkedin.com/in/amyhartzog/" target="_blank"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;
-          <a href="https://github.com/amyhartz" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/amy_hartz" target="_blank" rel="noopener">
+            <i alt="Twitter" title="Twitter" class="fa fa-twitter"></i>
+          </a>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/amyhartzog/" alt="LinkedIn" target="_blank" rel="noopener">
+            <i alt="LinkedIn" title="LinkedIn" class="fa fa-linkedin"></i>
+          </a>&nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/amyhartz" alt="GitHub" target="_blank" rel="noopener">
+            <i alt="Github" title="Github" class="fa fa-github"></i>
+          </a>
         </h1>
       </div>
     </div>
@@ -85,45 +91,9 @@
       </div>
 
       <div class="row">
-        <div class="col">
-          <a href="https://angular.io/" target="_blank" title="Angular">
-            <img class="tech" src="../assets/images/angular.svg" alt="angular">
-          </a>
-          <a href="https://getbootstrap.com/" target="_blank" title="Bootstrap">
-            <img class="tech" src="../assets/images/bootstrap.png" alt="bootstrap">
-          </a>
-          <a href="https://projects.spring.io/spring-boot/" target="_blank" title="Spring Boot">
-            <img class="tech" src="../assets/images/spring-boot-logo.png" alt="spring-boot">
-          </a>
-          <a href="https://www.javascript.com/" target="_blank" title="JavaScript">
-            <img class="tech" src="../assets/images/javascript_logo.png" alt="javascript">
-          </a>
-          <a href="https://www.typescriptlang.org/" target="_blank" title="TypeScript">
-            <img class="tech" src="../assets/images/typescript.png" alt="typescript">
-          </a>
-          <a href="https://sass-lang.com/" target="_blank" title="Sass">
-            <img class="tech" src="../assets/images/sass.png" alt="sass">
-          </a>
-          <a href="http://groovy-lang.org/" target="_blank" title="Groovy">
-            <img class="tech" src="../assets/images/groovy.png" alt="groovy">
-          </a>
-          <a href="https://angularjs.org/" target="_blank" title="AngularJs">
-            <img class="tech" src="../assets/images/angularjs.png" alt="AngularJs">
-          </a>
-          <a href="https://www.mysql.com/" target="_blank" title="MySQL">
-            <img class="tech" src="../assets/images/mysql.png" alt="MySQL">
-          </a>
-          <a href="https://aws.amazon.com/" target="_blank" title="AWS">
-            <img class="tech" src="../assets/images/aws.png" alt="aws">
-          </a>
-          <a href="http://www.oracle.com/technetwork/java/index-138747.html" target="_blank" title="Java">
-            <img class="tech" src="../assets/images/java.png" alt="Java">
-          </a>
-          <a href="https://developer.android.com/guide/index.html" target="_blank" title="Android">
-            <img class="tech" src="../assets/images/android.png" alt="Android">
-          </a>
-          <a href="https://www.jetbrains.com/idea/" target="_blank" title="IntelliJ">
-            <img class="tech" src="../assets/images/IntelliJ.png" alt="IntelliJ">
+        <div class="col center">
+          <a [attr.href]="tech.href" target="_blank" rel="noopener" [attr.title]="tech.title" *ngFor="let tech of techList">
+            <img class="tech" [attr.src]="'../assets/images/' + tech.imageName" [attr.alt]="tech.altText">
           </a>
         </div>
       </div>
