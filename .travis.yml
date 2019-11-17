@@ -13,6 +13,7 @@ cache:
   - "$HOME/.npm"
 script:
 - ng build --prod
+- ls
 
 deploy:
   provider: s3
