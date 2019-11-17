@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '9'
+dist: trusty
+sudo: required
+branches:
+  only:
+  - master
+before_script:
+- npm install -g @angular/cli
+script:
+- ng build --prod
+deploy:
+  provider: s3
+  access_key_id: AKIAVG6I3ANOYGM2T7X5
+  secret_access_key:
+    secure: lKduKtgqc4NT+XaHwpKuabKbY5s1R4mPvHJK+pBMqoxeaZIUUU8lZIoVQmSTKe3HvUjV6lAbrb+UXn/vCFiCvetIQIejG79vcRJ0Z4N2r/HtLbKoVjRfQK0TM4jLZuPxPc8XzbVDOnEHuivycKZCKGMYnZd2WaB05A7x7JQhIxSDgnY+6uFWm2lXDqpGHOgS0twUJGtWisQmJmNeUEAUQ+tuoa1oNfhTZ7b79/RF9FIoXer2Nb6M0IPSgz5QlkDiykibE9GBITW1v9bDOZtzHorfWu9MboEkqkMT4mFn8pyqzQj5FN5bOYQNMvFzgPglXQ7oE9n2YzJffZ9Rgyd7FTiTOy3R3OrAF0yEnjEuIps/EGst34KwayrWrcR1DCcIHV1IpY1OqL3hLxfBwNNsxi1tYvtWvZTyE/mf2gN4QvRrWZYK/Qr95Fgjc8FEklnl9TUYg2allLagtjZ/PDiLInZaLgELosCp/A2en5p+O0tM4xgCGWOCMZpeQSz7NPbAKgPbqc1SwiGdHXaM8BNvKok772ogx31a+712gBw/1BzUnfs4MJRZYnXoZq5ByieZhftgy0zrZXM9pk8zqSOxlttHM4b3Z84oaa04SVVFx6raPaNFs6zv8PViFL3QIrMnX2gvtzlgPXbyTFI/TQJ2qwd1DyUky5X0HEWOySjqhao=
+  bucket: amyhartzog.com
