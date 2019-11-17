@@ -15,10 +15,9 @@ cache:
   directories:
   - "$HOME/.npm"
 
-before_script:
-- npm install -g @angular/cli
 script:
 - ng build --prod
+
 deploy:
   provider: s3
   access_key_id: AKIAVG6I3ANOYGM2T7X5
