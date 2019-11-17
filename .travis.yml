@@ -17,9 +17,10 @@ cache:
 
 script:
 - ng build --prod
+- aws s3 list
 
-deploy:
-  provider: s3
-  access_key_id: <AWS_ACCESS_KEY>
-  bucket: amyhartzog.com
-  secret_access_key: <AWS_SECRET_KEY>
+#deploy:
+#  provider: s3
+#  access_key_id: <AWS_ACCESS_KEY>
+#  bucket: amyhartzog.com
+#  secret_access_key: <AWS_SECRET_KEY>
