@@ -20,8 +20,7 @@ script:
 
 deploy:
   provider: s3
-  access_key_id: AKIAVG6I3ANOYGM2T7X5
+  access_key_id: <AWS_ACCESS_KEY>
   bucket: amyhartzog.com
   local_dir: dist
-  secret_access_key:
-    secure: M+jkeus8plAMgV+tP+/SlYHVKXJPXAPWteLmKyuipwcpF67yY8JDORVzmUCEmD9aVvyiJd9ko3izM2RM7hRax6187CVF7FY9++9TTro+cxnZVBOAyBJdMzvavFeSuOfEeTh1KN8ASR6ZEHim9cEyzzphvg9I0KYtGquAvNVFloDxk2bqlH3FVvcdmIpWRPW3v9J4EuPjZAINoYnQvl5MQ0Swun1jkCm1TpBz3gDJC1cxSh6/8Hd037owi+Bb+1GTL3yNq75hMY1JsKKQot8SEn71I8LI7xPq75sgVLKmsZAsy9Y4PkWLk5+ntKRW08B20mxL8ulL3Q9/2CL/cwS0fBlcll6Gss13EmGv6Stdf9upO4aZQkLsDgtAjRqb+UywUqlvQ6jdji+nnVqWXcFn06vuGUs3CvW09Oc2JLrbCre2wiU4hh+96mL242EuSY8nIYr1rIqas/kWOhmDn7vFajGvGVcaxEySkhp78OKKBYdXpGS+ovXceI0KPC6hxFnQ4Y+EwQsxkHjuDSnIaePJKdt/jaLVNvPQ8g3wTPmVsLYP3xRgWhicl7eh9lT3SxJH1KJ+eYA9R4I3wzEFxiqaYFlaz5ehNVoPHZzy4tfTQoLH/Qy8yNXHsaqPAnUev5xGNRPvMyI+HAafubLMTqVJKa8H5LPjiN0vPQ0eCVj3jow=
+  secret_access_key: <AWS_SECRET_KEY>
