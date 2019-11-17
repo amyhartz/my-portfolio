@@ -141,6 +141,36 @@ export class AppComponent {
       title: 'Docker',
       href: 'https://www.docker.com/',
       altText: 'Docker'
+    },
+    {
+      imageName: 'scala.png',
+      title: 'Scala',
+      href: 'https://www.scala-lang.org/',
+      altText: 'Scala'
+    },
+    {
+      imageName: 'akka.png',
+      title: 'Akka',
+      href: 'https://akka.io/',
+      altText: 'Akka'
+    },
+    {
+      imageName: 'ansible.png',
+      title: 'Ansible',
+      href: 'https://www.ansible.com/',
+      altText: 'Ansible'
+    },
+    {
+      imageName: 'terraform.png',
+      title: 'Terraform',
+      href: 'https://www.terraform.io/',
+      altText: 'Terraform'
+    },
+    {
+      imageName: 'elasticsearch.png',
+      title: 'Elasticsearch',
+      href: 'https://www.elastic.co/',
+      altText: 'Elasticsearch'
     }
   ];
 }
