@@ -7,7 +7,7 @@ import {Technology} from "./Technology";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'app';å
 
   techList: Technology[] = [
     {
